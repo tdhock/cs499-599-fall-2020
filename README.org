@@ -62,25 +62,32 @@ Finally after doing all of the above, please drop by my office hours
 
 ** Student in-person class assignment 
 
-Monday	Donnelly	Brian
-Monday	Keefe	Chris
-Monday	Stenberg	Alyssa
-Monday	Ray	Brigham
-Monday	Wan	Hui
-Monday	Drake	Daniel
-Monday	Kruse	Joshua
-Monday	Rovira-Sugranes	Arnau
-Monday	Shaffer	Isaac
-Monday	Cao	Kehan
-Wednesday	Kethireddy	Sambashiva Reddy
-Wednesday	Hillman	Jonathan
-Wednesday	Su	Weiheng
-Wednesday	Couey	Benjamin
-Wednesday	Rao	Jun
-Wednesday	Messenger	Zachary
-Wednesday	Ghanaimiandoab	Dina
-Wednesday	Peterson	Benjamin
-Wednesday	Nemeth	Thomas
-Wednesday	Bolyen	Evan
+*** Monday	
 
-(friday will be all-remote)
+Donnelly	Brian
+Keefe	Chris
+Stenberg	Alyssa
+Ray	Brigham
+Wan	Hui
+Drake	Daniel
+Kruse	Joshua
+Shaffer	Isaac
+Cao	Kehan
+
+*** Wednesday	
+
+Rovira-Sugranes	Arnau
+Kethireddy	Sambashiva Reddy
+Hillman	Jonathan
+Su	Weiheng
+Couey	Benjamin
+Rao	Jun
+Messenger	Zachary
+Ghanaimiandoab	Dina
+Peterson	Benjamin
+Nemeth	Thomas
+Bolyen	Evan
+
+*** friday 
+
+everyone remote/zoom.
