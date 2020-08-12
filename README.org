@@ -1,12 +1,16 @@
-Computer Science 499 and 599 at Northern Arizona University, Fall 2020
+Computer Science 499/599 (CS599-001, CS499-008) at Northern Arizona
+University, Fall 2020
 
 Topic: Unsupervised Learning
 
-Dates: Aug 24 - Dec 11.
+Dates: Aug 12 - Nov 25.
 
-Meeting time/place: TBD
+Meeting time/place: MWF 8-8:50AM, Gateway Stdnt Success, Rm 103. All
+on zoom until Fri Aug 28. Hybrid in person / zoom starting Mon Aug 31.
 
-Syllabi: [[file:CS499-Fall2020-Unsupervised-Learning-Syllabus.pdf][499]], [[file:CS599-Fall2020-Unsupervised-Learning-Syllabus.pdf][599]].
+Syllabus: [[https://docs.google.com/document/d/1HOQYWLvwsGBVijQxvXKxf8aDREeLgklCsN9L1M8bHuQ/edit?usp=sharing][Google Doc]].
+
+Please use [[https://forms.gle/NzaR9ANXhcojRnxA6][this Google Form]] for feedback after every class.
 
 ** Textbooks
 
@@ -19,20 +23,16 @@ Hastie, Tibshirani, Friedman
 - Free PDF available from author's web page
   https://web.stanford.edu/~hastie/ElemStatLearn/
 
-** Screencasts
+** Video Lectures / Class recordings
 
-To learn basic R programming skills which will be highly relevant to
-your coding projects in this class, please watch [[https://www.youtube.com/playlist?list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme][these screencasts]] and
-follow along (pause the videos, type the code, then and execute the
-code on your own computer).
+- Weds Aug 12: [[file:2020-08-12-applications/slides.pdf][slides]]
+- Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class]]
+- TODO
 
-** Lectures
+** Homeworks
 
-TODO
-
-** Coding projects
-
-TODO
+- [[file:homeworks/1.org]] Due Fri Aug 14, 11:59PM.
+- TODO
 
 ** How to ace this class
 
@@ -55,3 +55,27 @@ learn.
 Finally after doing all of the above, please drop by my office hours
 (see syllabus), or email me to schedule a meeting.
 
+** Student in-person class assignment 
+
+Monday	Donnelly	Brian
+Monday	Keefe	Chris
+Monday	Stenberg	Alyssa
+Monday	Ray	Brigham
+Monday	Wan	Hui
+Monday	Drake	Daniel
+Monday	Kruse	Joshua
+Monday	Rovira-Sugranes	Arnau
+Monday	Shaffer	Isaac
+Monday	Cao	Kehan
+Wednesday	Kethireddy	Sambashiva Reddy
+Wednesday	Hillman	Jonathan
+Wednesday	Su	Weiheng
+Wednesday	Couey	Benjamin
+Wednesday	Rao	Jun
+Wednesday	Messenger	Zachary
+Wednesday	Ghanaimiandoab	Dina
+Wednesday	Peterson	Benjamin
+Wednesday	Nemeth	Thomas
+Wednesday	Bolyen	Evan
+
+(friday will be all-remote)
