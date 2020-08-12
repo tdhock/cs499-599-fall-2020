@@ -31,8 +31,12 @@ Hastie, Tibshirani, Friedman
 
 ** Homeworks
 
+To do the homeworks you need to install [[https://cloud.r-project.org/][the most recent version of R]]
+(4.0.2) with either the [[https://rstudio.com/products/rstudio/download/][RStudio]] IDE (for beginners) or the [[http://ess.r-project.org/][ESS]] IDE
+(for students who already know/use emacs).
+
 - [[file:homeworks/1.org]] Due Fri Aug 14, 11:59PM.
-- TODO
+- TODO 
 
 ** How to ace this class
 
