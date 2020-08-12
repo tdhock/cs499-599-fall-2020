@@ -8,7 +8,9 @@ Your goal is to write an R script that performs the following steps:
    of the zip.test data set from
    https://web.stanford.edu/~hastie/ElemStatLearn/datasets/zip.test.gz
    (inside of if statement so that the download only happens if the
-   file does not yet exist on your system). This data file represents
+   file does not yet exist on your system). Make sure the saved file
+   has the gz suffix, which is recognized by fread, and indicates that
+   the file has been compressed using gzip. This data file represents
    images of handwritten digits, one example per line/row. Each
    example is one of the ten possible digits (as indicated by the
    label in the first column).
