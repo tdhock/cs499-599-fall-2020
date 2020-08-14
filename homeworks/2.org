@@ -1,0 +1,31 @@
+Homework 2: data visualization using ggplot2
+
+These are exercises from
+http://members.cbio.mines-paristech.fr/~thocking/animint2-manual/Ch02-ggplot2.html
+(the variable name viz.aligned below refers to ggplot code on that web
+page). 
+
+1. In viz.aligned we showed a ggplot with a scatterplot panel on the
+   left and a time series panel on the right. Make another version of
+   the data visualization with the time series panel on the left and
+   the scatterplot panel on the right. Hint: the order of panels in
+   ggplots is controlled by the factor levels of the facet
+   variable. For example facet_grid(. ~ x) means use the different
+   values of the x variable in different facets, where x =
+   factor(values, levels).
+2. In viz.aligned the scatterplot displays fertility rate and life
+   expectancy, but the time series displays only fertility rate. Make
+   another version of the data visualization that shows both time
+   series. Hint: add another geom_point and use both horizontal and
+   vertical panels in facet_grid(row_var ~ col_var).
+3. Create a multi-panel data visualization that shows each year of the
+   WorldBank data set in a separate panel.
+
+Exercise for CS599 graduate students: create an R function that takes
+a data table as input, and returns one of the ggplots described in the
+exercises above. Read [[https://swcarpentry.github.io/r-novice-inflammation/02-func-R/][Creating Functions]] for more information about
+how to write R functions -- you will need to do that in your R package
+coding projects.
+
+Please submit a PDF with your source code and the resulting three
+figures.
