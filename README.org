@@ -27,7 +27,8 @@ Hastie, Tibshirani, Friedman
 
 [[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all recordings on google drive]].
 - Weds Aug 12: [[file:2020-08-12-applications/slides.pdf][slides]], [[https://drive.google.com/file/d/1Ij5Lpcz3kIFBG2xxAFbKhPzDSGUtONNR/view][video recording]].
-- Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class (reading CSV)]].
+- Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class (reading CSV)]]. reading CSV,
+  str, help, subset, conversion.
 - Mon Aug 17: [[https://uc-r.github.io/ggplot_intro][ggplot intro (read before class)]].
 - Wed Aug 19: [[https://r4ds.had.co.nz/data-visualisation.html][Data visualization chapter of R for Data Science
   (read before class)]].
