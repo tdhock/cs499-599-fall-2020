@@ -25,9 +25,10 @@ Hastie, Tibshirani, Friedman
 
 ** Video Lectures / Class recordings
 
-[[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all recordings on google drive]].
-- Weds Aug 12: [[file:2020-08-12-applications/slides.pdf][slides]], [[https://drive.google.com/file/d/1Ij5Lpcz3kIFBG2xxAFbKhPzDSGUtONNR/view][video recording]].
-- Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class (reading CSV)]]. reading CSV,
+[[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all class recordings on google drive]].
+
+- Weds Aug 12: introductory [[file:2020-08-12-applications/slides.pdf][slides]].
+- Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class]], reading CSV,
   str, help, subset, conversion.
 - Mon Aug 17: [[https://uc-r.github.io/ggplot_intro][ggplot intro (read before class)]].
 - Wed Aug 19: [[https://r4ds.had.co.nz/data-visualisation.html][Data visualization chapter of R for Data Science
@@ -45,6 +46,13 @@ emacs tutorials]]).
 - [[file:homeworks/1.org][1: installing R and reading CSV]] Due Fri Aug 14, 11:59PM.
 - [[file:homeworks/2.org][2: data visualization using ggplot2]] Due Fri Aug 21, 11:59PM.
 - TODO
+
+General Questions and Answers
+- can I do my homework with an older version of R? Maybe, try it if
+  you want, but homeworks will typically require using R packages,
+  which are only tested with the most recent versions of R, so if you
+  are getting errors with an old version of R, try upgrading to the
+  most recent version.
 
 ** How to ace this class
 
