@@ -22,9 +22,11 @@ ESL by Hastie, Tibshirani, Friedman
 - Free PDF available from author's web page
   https://web.stanford.edu/~hastie/ElemStatLearn/
 
-** Videos / Readings
+** Videos / Readings / Code demos
 
 [[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all class recordings on google drive]].
+
+[[file:demos/][Folder of all code demos from class]].
 
 - Weds Aug 12: introductory [[file:2020-08-12-applications/slides.pdf][slides]].
 - Fri Aug 14: [[https://www.youtube.com/watch?v=SRdzg-gzKXs&list=PLwc48KSH3D1M78ilQi35KPe2GHa7B_Rme&index=2&t=0s][video to watch before class]], reading CSV,

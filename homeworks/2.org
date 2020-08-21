@@ -15,6 +15,13 @@ FAQ
   animint2, or (2) use install.packages("gapminder") to get a
   different copy of the gapminder / WorldBank data set to use with
   ggplot2.
+- If you use animint2, just use ggplot etc functions (no need to use
+  animint function, but you can if you want).
+- how to save figures? save the ggplot object, then use a function
+  which starts a graphics device (png, pdf, etc), then print the
+  ggplot object, then use dev.off() to close the graphics device (and
+  save the ggplot to a file), as in
+  [[file:~/teaching/cs499-599-fall-2020/demos/2020-08-21.R]]
 
 1. In viz.aligned we showed a ggplot with a scatterplot panel on the
    left and a time series panel on the right. Make another version of
