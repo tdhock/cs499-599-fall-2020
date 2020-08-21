@@ -14,16 +14,15 @@ Please use [[https://forms.gle/NzaR9ANXhcojRnxA6][this Google Form]] for feedbac
 
 ** Textbooks
 
-Murphy
+MLAPP by Murphy
 - Author's web page https://www.cs.ubc.ca/~murphyk/MLbook/
-- NAU library page https://arizona-nau-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01NAU_ALMA51166833980003842&context=L&vid=01NAU&lang=en_US&search_scope=Everything&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,murphy%20machine%20learning&sortby=rank&mode=Basic
-- Link to e-book http://eds.a.ebscohost.com/ehost/ebookviewer/ebook?sid=f4a68ba6-099a-4015-9d63-a342771786f3%40sdc-v-sessmgr02&vid=0&format=EB
+- [[https://arizona-nau.userservices.exlibrisgroup.com/view/action/uresolver.do;jsessionid=44D57625A91B64FED37B94B305F9F939.app03.na03.prod.alma.dc04.hosted.exlibrisgroup.com:1801?operation=resolveService&package_service_id=20483326390003842&institutionId=3842&customerId=3840][full book online]]
 
-Hastie, Tibshirani, Friedman
+ESL by Hastie, Tibshirani, Friedman
 - Free PDF available from author's web page
   https://web.stanford.edu/~hastie/ElemStatLearn/
 
-** Video Lectures / Class recordings
+** Videos / Readings
 
 [[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all class recordings on google drive]].
 
@@ -35,6 +34,16 @@ Hastie, Tibshirani, Friedman
   (read before class)]].
 - Fri Aug 21: [[http://members.cbio.mines-paristech.fr/~thocking/animint2-manual/Ch02-ggplot2.html][Grammar of graphics chapter of Animint2 Manual (read
   before class)]].
+- Mon Aug 24: Reading.
+  - Introduction to clustering, MLAPP 25.1
+  - Clustering evaluation, MLAPP-25.1.2
+- Weds Aug 26: K-means is discussed in ESL-14.3.6, MLAPP-11.4.2.5
+- Fri Aug 28: Gaussian mixtures are discussed in ESL-14.3.7, MLAPP-11.4.2
+- Mon Aug 31: Hierarchical clustering ESL-14.3.12, MLAPP-25.5.1
+- TODO
+- [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
+- Dirichlet and Chinese Restaurant Process MLAPP-25.2
+- HMM MLAPP-17.5.2
 
 ** Homeworks
 
@@ -45,7 +54,18 @@ emacs tutorials]]).
 
 - [[file:homeworks/1.org][1: installing R and reading CSV]] Due Fri Aug 14, 11:59PM.
 - [[file:homeworks/2.org][2: data visualization using ggplot2]] Due Fri Aug 21, 11:59PM.
-- TODO
+- [[file:homeworks/3.org][3: K-means and mixture models]] Due Fri Aug 28, 11:59PM.
+- 4: Hierarchical clustering Due Fri Sep 4, 11:59PM.
+- 5: Spectral Clustering Due Fri Sep 11, 11:59PM.
+- 6: Chinese Restaurant Process Due Fri Sep 18, 11:59PM.
+- 7: Indian Buffet Process Due Fri Sep 25, 11:59PM.
+- 8: Binary segmentation Due Fri Oct 9, 11:59PM.
+- 9: Optimal segmentation Due Fri Oct 16, 11:59PM.
+- 10: Hidden Markov Models Due Fri Oct 23, 11:59PM. 
+- 11: Principal Components Analysis Due Fri Oct 30, 11:59PM.
+- 12: Sparse PCA Due Fri Nov 6, 11:59PM.
+- 13: t-SNE Due Fri Nov 13, 11:59PM.
+- 14: autoencoders Due Fri Nov 20, 11:59PM.
 
 General Questions and Answers
 - can I do my homework with an older version of R? Maybe, try it if
@@ -76,6 +96,10 @@ syllabus), or email me to schedule a meeting.
 
 ** Student in-person class assignment 
 
+*** All virtual
+
+Cao	Kehan
+
 *** Monday	
 
 Donnelly	Brian
@@ -86,7 +110,6 @@ Wan	Hui
 Drake	Daniel
 Kruse	Joshua
 Shaffer	Isaac
-Cao	Kehan
 
 *** Wednesday	
 
@@ -105,3 +128,4 @@ Bolyen	Evan
 *** friday 
 
 everyone remote/zoom.
+
