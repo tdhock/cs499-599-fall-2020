@@ -40,7 +40,8 @@ ESL by Hastie, Tibshirani, Friedman
   - Introduction to clustering, MLAPP 25.1
   - Clustering evaluation, MLAPP-25.1.2
 - Weds Aug 26: K-means is discussed in ESL-14.3.6, MLAPP-11.4.2.5
-- Fri Aug 28: Gaussian mixtures are discussed in ESL-14.3.7, MLAPP-11.4.2
+- Fri Aug 28: Gaussian mixtures are discussed in ESL-14.3.7,
+  MLAPP-11.4.2. [[file:mclust-models.jpg][mclust model names figure]]
 - Mon Aug 31: Hierarchical clustering ESL-14.3.12, MLAPP-25.5.1
 - TODO
 - [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
