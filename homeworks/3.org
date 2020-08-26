@@ -9,6 +9,11 @@ Comparing clustering methods, K-means and Gaussian mixture models
    mixture components. Plot the log likelihood as a function of G
    (number of mixture components). After what G does the log
    likelihood start to look flat?
+- if mclust::Mclust does not work for you (some students reported it
+  returns NULL), it may be because your data set is in the wrong
+  format (make sure it is a numeric matrix). You can also try using
+  another package that implements Gaussian mixture models,
+  e.g. Rmixmod, mixture, EMCluster, mixtools, bgmm, flexmix.
 
 3. For both models above, use pdfCluster::adj.rand.index to compute
    the Adjusted Rand Index (ARI) with respect to the true class/digit
