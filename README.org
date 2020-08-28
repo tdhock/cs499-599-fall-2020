@@ -42,7 +42,9 @@ ESL by Hastie, Tibshirani, Friedman
 - Weds Aug 26: K-means is discussed in ESL-14.3.6, MLAPP-11.4.2.5
 - Fri Aug 28: Gaussian mixtures are discussed in ESL-14.3.7,
   MLAPP-11.4.2. [[file:mclust-models.jpg][mclust model names figure]]
-- Mon Aug 31: Hierarchical clustering ESL-14.3.12, MLAPP-25.5.1
+- Mon Aug 31: Hierarchical clustering ESL-14.3.12
+- Weds Sep 2: MLAPP-25.5.1
+- Fri Sep 4: 
 - TODO
 - [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
 - Dirichlet and Chinese Restaurant Process MLAPP-25.2
@@ -58,7 +60,7 @@ emacs tutorials]]).
 - [[file:homeworks/1.org][1: installing R and reading CSV]] Due Fri Aug 14, 11:59PM.
 - [[file:homeworks/2.org][2: data visualization using ggplot2]] Due Fri Aug 21, 11:59PM.
 - [[file:homeworks/3.org][3: K-means and mixture models]] Due Fri Aug 28, 11:59PM.
-- 4: Hierarchical clustering Due Fri Sep 4, 11:59PM.
+- [[file:homeworks/4.org][4: Hierarchical clustering]] Due Fri Sep 4, 11:59PM.
 - 5: Spectral Clustering Due Fri Sep 11, 11:59PM.
 - 6: Chinese Restaurant Process Due Fri Sep 18, 11:59PM.
 - 7: Indian Buffet Process Due Fri Sep 25, 11:59PM.

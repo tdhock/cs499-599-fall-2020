@@ -1,3 +1,26 @@
+
+- Set up your cohort rotations and communicate them to the students
+
+- Remind students not to come in person if they're sick or have been exposed to someone who's sick
+
+- Remind students to do their health check app
+
+- Watch for last-minute changes in NAU in-person attendance policy which can occur at any time and will be critical to follow
+
+- Be strict in enforcing classroom rules (who attends when, coming sick, etc.)
+
+- Start on time, try to end a little early, get students out of class right on time to help with traffic management. Hold your after class discussions elsewhere
+
+- Clean surfaces before and after, as much as possible
+
+- Wear your clear mask so students can see you talking
+
+- Test your classroom tech before Monday; get good at booting up your tech fast and helping students troubleshoot
+
+## TODO pdf, png graphics devices.
+
+## TODO manual color legends
+
 ## use initialization subset to reduce computation time.
 n.clusters <- 10
 zip.dt <- data.table::fread("zip.test.gz")

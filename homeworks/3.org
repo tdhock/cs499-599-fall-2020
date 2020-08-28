@@ -33,6 +33,7 @@ the textbooks. Start by taking K random data points as the initial K
 cluster centers (use base::sample for random selection). 
 - Write a function KMEANS(data.matrix, K) which returns a list similar
   to the result of the stats::kmeans function. 
+- for the initialization, you can use sample(1:NROWS, K).
 - Make a figure that compares the within-point scatter (tot.withinss
   element of the resulting list) for the two kmeans algorithms. Plot
   tot.withinss as a function of K, using two random starts for each
