@@ -122,3 +122,6 @@ ggplot()+
   geom_line(aes(
     n.clusters, ARI),
     data=metrics.dt)
+
+## TODO next year: mclust functions for manual initialization of EM
+## algorithm starting with model parmeters (em) or probabilities (me).
