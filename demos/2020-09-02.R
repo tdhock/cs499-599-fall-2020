@@ -11,8 +11,6 @@ str(time.vec)
 
 plot(cl.tree)
 
-
-
 if(FALSE){
   install.packages("microbenchmark")
 }

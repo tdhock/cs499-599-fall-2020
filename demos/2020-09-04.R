@@ -1,3 +1,5 @@
+## Covid slide announcement.
+
 ## times=3 argument
 
 ## 10^seq...
