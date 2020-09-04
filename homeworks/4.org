@@ -63,8 +63,8 @@ matrix, then recursively join observations/groups until you have the
 desired number of clusters.
 - Write a function HCLUST(data.matrix, K) which computes the
   clustering. For simplicity, do NOT compute the entire tree; instead
-  your function should return an integer vector of cluster IDs
-  (size=number of observations, entries=from 1 to K).
+  your function should return an integer vector of cluster IDs, same
+  as stats::cutree (size=number of observations, entries=from 1 to K).
 - use single linkage method (distance from a group to an observation
   is the minimum distance over all points in that group).
 - evaluate the accuracy of your result by running your algorithm
