@@ -45,7 +45,9 @@ ESL by Hastie, Tibshirani, Friedman
 - Mon Aug 31: Hierarchical clustering ESL-14.3.12
 - Weds Sep 2: Same ESL as Monday.
 - Fri Sep 4: MLAPP-25.5.1, [[file:2020-09-01-COVID-studenttips-faculty.pptx][COVID19 announcement slide]].
-- TODO
+- Mon Sep 7: ESL-14.5.3
+- Weds Sep 9: MLAPP-25.4
+- Fri Sep 11:
 - [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
 - Dirichlet and Chinese Restaurant Process MLAPP-25.2
 - HMM MLAPP-17.5.2

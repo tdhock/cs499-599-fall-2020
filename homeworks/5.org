@@ -1,0 +1,40 @@
+Spectral clustering involves computing an N x N affinity/kernel matrix
+(quadratic time/space in N), then an eigen-decomposition (cubic time
+in N), which results in a matrix of eigenvectors, which are new
+features/column that can be clustered with a standard algorithm like
+kmeans. Spectral clustering is useful for detecting clusters that are
+non-linear/non-spherical in shape.
+
+1. Use kernlab::specc in R to compute a spectral clustering on the
+   first 300 rows of the zip.test data, from 1 to 20 clusters. Compute
+   ARI of each clustering and plot y=ARI as a function of x=number of
+   clusters using default parameters of specc. What number of clusters
+   is the most accurate?
+
+2. Again compute spectral clusterings but using a polynomial kernel
+   (kernlab::polydot) instead of the default RBF kernel. Compute
+   clusterings using three different polynomial degree values (2,
+   4, 6) and 1 to 20 clusters. Compute ARI of each clustering and plot
+   y=ARI as a function of x=number of clusters, using different colors
+   for the different polynomial degrees. What number of clusters and
+   polynomial degree is most accurate?
+
+3. Use microbenchmark to compute timings of kmeans, hclust, and specc
+   for several subset sizes N. Plot y=time in seconds versus x=subset
+   size, with each algorithm in a different color. Use log/log scales
+   so that different time complexity classes appear as lines with
+   different slopes. Use a large enough range of N so that the
+   complexity class of each algorithm is clear (kmeans linear, hclust
+   quadratic, specc cubic).
+
+** CS599 grad students only
+
+Code a simple spectral clustering algorithm from scratch (without
+using any special packages like kernlab), using the descriptions in
+the textbooks. Compute a kernal/similarity matrix, then either the
+un-normalized or normalized graph Laplacian, then compute its
+eigenvalues/vectors, then consider the eigenvectors corresponding
+to the smallest eigenvalues, then run stats::kmeans. Run
+the algorithm on the halfcircle/moons data we saw in class, and draw
+the two different clusters in different colors.
+
