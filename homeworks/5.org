@@ -29,12 +29,13 @@ non-linear/non-spherical in shape.
 
 ** CS599 grad students only
 
-Code a simple spectral clustering algorithm from scratch (without
-using any special packages like kernlab), using the descriptions in
-the textbooks. Compute a kernal/similarity matrix, then either the
+Write an R function SPECC that implements a simple spectral clustering
+algorithm from scratch (without using any special packages like
+kernlab), using the descriptions/equations/pseudocode in the
+textbooks. Compute a kernal/similarity matrix, then either the
 un-normalized or normalized graph Laplacian, then compute its
-eigenvalues/vectors, then consider the eigenvectors corresponding
-to the smallest eigenvalues, then run stats::kmeans. Run
-the algorithm on the halfcircle/moons data we saw in class, and draw
-the two different clusters in different colors.
+eigenvalues/vectors, then consider the eigenvectors corresponding to
+the smallest eigenvalues, then run stats::kmeans. Run the algorithm on
+the halfcircle/moons data we saw in class, and draw the two different
+clusters in different colors.
 
