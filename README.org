@@ -64,9 +64,10 @@ emacs tutorials]]).
 - [[file:homeworks/2.org][2: data visualization using ggplot2]] Due Fri Aug 21, 11:59PM.
 - [[file:homeworks/3.org][3: K-means and mixture models]] Due Fri Aug 28, 11:59PM.
 - [[file:homeworks/4.org][4: Hierarchical clustering]] Due Fri Sep 4, 11:59PM.
-- 5: Spectral Clustering Due Fri Sep 11, 11:59PM.
+- [[file:homeworks/5.org][5: Spectral Clustering]] Due Fri Sep 11, 11:59PM.
 - 6: Chinese Restaurant Process Due Fri Sep 18, 11:59PM.
 - 7: Indian Buffet Process Due Fri Sep 25, 11:59PM.
+- [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Oct 2, 11:59PM.
 - 8: Binary segmentation Due Fri Oct 9, 11:59PM.
 - 9: Optimal segmentation Due Fri Oct 16, 11:59PM.
 - 10: Hidden Markov Models Due Fri Oct 23, 11:59PM. 
