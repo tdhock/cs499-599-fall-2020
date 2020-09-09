@@ -1,9 +1,9 @@
 Spectral clustering involves computing an N x N affinity/kernel matrix
-(quadratic time/space in N), then an eigen-decomposition (cubic time
-in N), which results in a matrix of eigenvectors, which are new
-features/column that can be clustered with a standard algorithm like
-kmeans. Spectral clustering is useful for detecting clusters that are
-non-linear/non-spherical in shape.
+(at least quadratic time/space in N), then an eigen-decomposition
+(cubic time in N), which results in a matrix of eigenvectors, which
+are new features/column that can be clustered with a standard
+algorithm like kmeans. Spectral clustering is useful for detecting
+clusters that are non-linear/non-spherical in shape.
 
 1. Use kernlab::specc in R to compute a spectral clustering on the
    first 300 rows of the zip.test data, from 1 to 20 clusters. Compute

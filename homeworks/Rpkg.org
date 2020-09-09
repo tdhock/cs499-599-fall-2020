@@ -20,7 +20,7 @@ For each function you need to
 
 You need to upload your code to a GitHub repository (you need a free
 GitHub account so please create one if you don't have one yet). Your
-repo should NOT include any files except source code/docs/tests
+repo should NOT include any files except source code/docs/tests/etc
 required to build the package (e.g. you will get minus points if there
 is a .Rhistory file in your github repo).
 
