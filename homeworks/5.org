@@ -6,18 +6,20 @@ algorithm like kmeans. Spectral clustering is useful for detecting
 clusters that are non-linear/non-spherical in shape.
 
 1. Use kernlab::specc in R to compute a spectral clustering on the
-   first 300 rows of the zip.test data, from 1 to 20 clusters. Compute
-   ARI of each clustering and plot y=ARI as a function of x=number of
-   clusters using default parameters of specc. What number of clusters
-   is the most accurate?
+   first 300 rows of the zip.test data, from 1 to 20 clusters (you may
+   need to write a special case for 1 cluster, just return a vector of
+   ones). Compute ARI of each clustering and plot y=ARI as a function
+   of x=number of clusters using default parameters of specc. What
+   number of clusters is the most accurate?
 
 2. Again compute spectral clusterings but using a polynomial kernel
-   (kernlab::polydot) instead of the default RBF kernel. Compute
-   clusterings using three different polynomial degree values (2,
-   4, 6) and 1 to 20 clusters. Compute ARI of each clustering and plot
-   y=ARI as a function of x=number of clusters, using different colors
-   for the different polynomial degrees. What number of clusters and
-   polynomial degree is most accurate?
+   (kernlab::polydot with default values for scale/offset) instead of
+   the default RBF kernel. Compute clusterings using three different
+   polynomial degree values (2, 4, 6) and 1 to 20 clusters. Compute
+   ARI of each clustering and plot y=ARI as a function of x=number of
+   clusters, using different colors for the different polynomial
+   degrees. What number of clusters and polynomial degree is most
+   accurate?
 
 3. Use microbenchmark to compute timings of kmeans, hclust, and specc
    for several subset sizes N. Plot y=time in seconds versus x=subset
@@ -34,8 +36,13 @@ algorithm from scratch (without using any special packages like
 kernlab), using the descriptions/equations/pseudocode in the
 textbooks. Compute a kernal/similarity matrix, then either the
 un-normalized or normalized graph Laplacian, then compute its
-eigenvalues/vectors, then consider the eigenvectors corresponding to
-the smallest eigenvalues, then run stats::kmeans. Run the algorithm on
-the halfcircle/moons data we saw in class, and draw the two different
-clusters in different colors.
+eigenvalues/vectors using base::eigen, then consider the eigenvectors
+corresponding to the smallest eigenvalues, then run stats::kmeans. Run
+the algorithm on the halfcircle/moons data we saw in class, and draw
+the two different clusters in different colors.
+
+For the parameters:
+- scale: 1
+- number of neighbors: 5
+- number of eigenvectors: 5
 

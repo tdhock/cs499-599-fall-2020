@@ -13,7 +13,7 @@ Syllabus: [[https://docs.google.com/document/d/1HOQYWLvwsGBVijQxvXKxf8aDREeLgklC
 Please use [[https://forms.gle/NzaR9ANXhcojRnxA6][this Google Form]] for feedback after every class.
 
 ** Textbooks
-
+   
 MLAPP by Murphy
 - Author's web page https://www.cs.ubc.ca/~murphyk/MLbook/
 - [[https://arizona-nau.userservices.exlibrisgroup.com/view/action/uresolver.do;jsessionid=44D57625A91B64FED37B94B305F9F939.app03.na03.prod.alma.dc04.hosted.exlibrisgroup.com:1801?operation=resolveService&package_service_id=20483326390003842&institutionId=3842&customerId=3840][full book online]]
@@ -49,8 +49,12 @@ ESL by Hastie, Tibshirani, Friedman
   Clustering, ESL-14.5.3
 - Weds Sep 9: MLAPP-25.4
 - Fri Sep 11: same.
-- [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
-- Dirichlet and Chinese Restaurant Process MLAPP-25.2
+- Mon Sep 14: Estimating the number of clusters, ESL-14.3.11
+- Weds Sep 16: Model selection for latent variable models, MLAPP-11.5
+- Fri Sep 18: same.
+- Mon Sep 21: Dirichlet and Chinese Restaurant Process MLAPP-25.2
+- Weds Sep 23: [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA)
+- Fri Sep 25:
 - HMM MLAPP-17.5.2
 
 ** Homeworks
@@ -59,6 +63,9 @@ To do the homeworks you need to install [[https://cloud.r-project.org/][the most
 (4.0.2) with either the [[https://rstudio.com/products/rstudio/download/][RStudio]] IDE (for beginners) or the [[http://ess.r-project.org/][ESS]] IDE
 (for students who already know/use emacs, or who want to learn, [[https://www.youtube.com/playlist?list=PLwc48KSH3D1Onsed66FPLywMSIQmAhUYJ][my
 emacs tutorials]]).
+
+UPDATE Thurs Sept 10: [[https://docs.google.com/document/d/1W6-HdQLgHayOFXaQtscO5J5yf05G7E6KeXyiBJFcT7A/edit?usp=sharing][This rubric]] will be used to grade the code
+quality/style/efficiency in each of your homeworks. 
 
 - [[file:homeworks/1.org][1: installing R and reading CSV]] Due Fri Aug 14, 11:59PM.
 - [[file:homeworks/2.org][2: data visualization using ggplot2]] Due Fri Aug 21, 11:59PM.
