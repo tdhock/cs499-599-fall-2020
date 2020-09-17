@@ -15,9 +15,10 @@ clustering.
    number of clusters, and for each set (train/validation), compute
    the within-cluster sum of squares (to do that you need to first
    compute the closest cluster center to each observation, using the
-   "centers" component of the list returned by kmeans). You can check
-   your work by comparing your value with "tot.withinss" (they should
-   be the same). Plot y=sum of squares as a function of x=number of
+   "centers" component of the list returned by kmeans on the train
+   set). You can check your work by comparing your within-cluster sum
+   of squares for the train set with "tot.withinss" (they should be
+   the same). Plot y=sum of squares as a function of x=number of
    clusters, with a different colored line for each set
    (e.g. train=red, validation=black). Do both of your lines decrease
    as expected?
@@ -32,7 +33,11 @@ clustering.
    different colored lines for different sets (e.g. train=red,
    validation=black). Does the train negative log likelihood always
    decrease as expected? Does the validation negative log likelihood
-   decrease and then increase (U shape) as expected?
+   decrease and then increase (U shape) as expected?  If the
+   validation curve does not increase, then you need to increase the
+   maximum number of mixture components (instead of 20 try 30 or
+   40). With enough mixture components you should see that the
+   validation curve starts to increase.
 
 ** CS599 Graduate students only
 
@@ -45,9 +50,10 @@ kmeans sum of squares on random uniform data.
   random numbers between -1 and 1, in a matrix the same size as the
   zip.test data matrix you cluster.
 - Generate 20 random matrices, as they did in ESL Figure 14.11.
-- Compute kmeans for 1 to 20 clusters, for each of the 21 data sets
-  (zip.test + 20 random uniform). For clarity use a for loop over a
-  list with 21 elements.
+- Compute kmeans for 1 to KMAX clusters (where KMAX=40 or maybe
+  larger, make sure you can see a maximum in the gap statistic), for
+  each of the 21 data sets (zip.test + 20 random uniform). For clarity
+  use a for loop over a list with 21 elements.
 - Compute the quantities shown in ESL Figure 14.11, and make two
   ggplots. The first plot is y=normalized sum of squares as a function
   of x=number of clusters, zip.test line in green, mean uniform random
