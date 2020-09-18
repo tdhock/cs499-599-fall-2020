@@ -65,7 +65,7 @@ To do the homeworks you need to install [[https://cloud.r-project.org/][the most
 (for students who already know/use emacs, or who want to learn, [[https://www.youtube.com/playlist?list=PLwc48KSH3D1Onsed66FPLywMSIQmAhUYJ][my
 emacs tutorials]]).
 
-UPDATE Thurs Sept 10: [[https://docs.google.com/document/d/1W6-HdQLgHayOFXaQtscO5J5yf05G7E6KeXyiBJFcT7A/edit?usp=sharing][This rubric]] will be used to grade the code
+UPDATE Thurs Sept 10: [[https://docs.google.com/document/d/1W6-HdQLgHayOFXaQtscO5J5yf05G7E6KeXyiBJFcT7A/edit?usp=sharing][This General Usage Rubric]] will be used to grade the code
 quality/style/efficiency in each of your homeworks. 
 
 - [[file:homeworks/1.org][1: installing R and reading CSV]] Due Fri Aug 14, 11:59PM.
