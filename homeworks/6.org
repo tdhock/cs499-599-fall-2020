@@ -11,26 +11,30 @@ clustering.
    print and display a contingency table. Are there about the same
    number of each digit/label in each set?
 
-2. Use stats::kmeans on the train data, for 1 to 20 clusters. For each
-   number of clusters, and for each set (train/validation), compute
-   the within-cluster sum of squares (to do that you need to first
-   compute the closest cluster center to each observation, using the
-   "centers" component of the list returned by kmeans on the train
-   set). You can check your work by comparing your within-cluster sum
-   of squares for the train set with "tot.withinss" (they should be
-   the same). Plot y=sum of squares as a function of x=number of
-   clusters, with a different colored line for each set
-   (e.g. train=red, validation=black). Do both of your lines decrease
-   as expected?
+2. Show that validation error can NOT be used as a model selection
+   criterion for kmeans. Use stats::kmeans on the train data, for 1 to
+   20 clusters (or maybe go up to 50 if you really want to show that
+   validation error never goes back up). For each number of clusters,
+   and for each set (train/validation), compute the within-cluster sum
+   of squares (to do that you need to first compute the closest
+   cluster center to each observation, using the "centers" component
+   of the list returned by kmeans on the train set). You can check
+   your work by comparing your within-cluster sum of squares for the
+   train set with "tot.withinss" (they should be the same). Plot y=sum
+   of squares as a function of x=number of clusters, with a different
+   colored line for each set (e.g. train=red, validation=black). Do
+   both of your lines decrease as expected?
 
-3. Use mclust::Mclust on the train data, for 1 to 20 clusters, and for
-   a single value of modelNames (e.g. VEV for ellipsoidal, equal
-   shape). Remember you can use a subset of data for the
-   initialization to reduce computation time. Use mclust::dens to
-   compute a vector of log likelihood values, one for each observation
-   (in both train/validation sets). Compute and plot y=mean negative
-   log likelihood as a function of x=number of clusters, using
-   different colored lines for different sets (e.g. train=red,
+3. Show that validation negative log likelihood CAN be used as a model
+   selection criterion for Gaussian Mixture Models. Use mclust::Mclust
+   on the train data, for 1 to 20 clusters, and for a single value of
+   modelNames (e.g. VEV for ellipsoidal, equal shape). Remember you
+   can use a subset of data for the initialization to reduce
+   computation time. Use mclust::dens to compute a vector of log
+   likelihood values, one for each observation (in both
+   train/validation sets). Compute and plot y=mean negative log
+   likelihood as a function of x=number of clusters, using different
+   colored lines for different sets (e.g. train=red,
    validation=black). Does the train negative log likelihood always
    decrease as expected? Does the validation negative log likelihood
    decrease and then increase (U shape) as expected?  If the
