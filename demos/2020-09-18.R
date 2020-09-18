@@ -1,3 +1,5 @@
+library(data.table)
+library(ggplot2)
 ## homework 6, go up to 30 or 40 clusters.
 
 ## continue overfitting demo.
@@ -9,9 +11,7 @@ N.simulated.data <- 20*N.true.clusters
 set.seed(1)
 true.sd <- 0.2
 sim.data.vec <- rnorm(N.simulated.data, means.simulated.data, sd=true.sd)
-library(data.table)
 (sim.data.dt <- data.table(feature=sim.data.vec, y=0))
-library(ggplot2)
 ggplot()+
   geom_point(aes(
     x=feature, y),
@@ -204,3 +204,69 @@ min.dt[, .(
   tot.withinss=sum(min.ss)
 ), by=.(set=shuffled.sets[obs])]
 kmeans.result$tot.withinss
+
+## another data.table method (more time/space efficient).
+(set.obs.ids <- data.table(set=shuffled.sets, obs=seq_along(shuffled.sets)))
+set.obs.ids[, {
+  set.obs.mins <- .SD[, {
+    diff.mat <- X.mat[obs, ] - t(kmeans.result$centers)
+    .(min.ss=min(colSums(diff.mat^2)))
+  }, by="obs"]
+  set.obs.mins[, .(tot.withinss=sum(min.ss))]
+}, by="set"]
+kmeans.result$tot.withinss
+
+## time comparison
+microbenchmark::microbenchmark(
+  array={
+    array.dim <- c(nrow(X.mat), ncol(X.mat), nrow(kmeans.result$centers))
+    array.names <- list(obs=NULL, feature=NULL, cluster=NULL)
+    i.array <- array(
+      X.mat, array.dim, array.names)
+    head(X.mat)
+    head(i.array)
+    m.array <- array(
+      rep(t(kmeans.result$centers), each=nrow(X.mat)), array.dim, array.names)
+    head(m.array)
+    squares.array <- (i.array-m.array)^2
+    sum.squares.mat <- apply(squares.array, c("obs", "cluster"), sum)
+    min.vec <- apply(sum.squares.mat, "obs", min)
+    tapply(min.vec, shuffled.sets, sum)
+  }, cartesian={
+    i.dt <- data.table(
+      value=as.numeric(X.mat),
+      obs=as.integer(row(X.mat)),
+      feature=as.integer(col(X.mat)))
+    m.dt <- data.table(
+      center=as.numeric(kmeans.result$centers),
+      cluster=as.integer(row(kmeans.result$centers)),
+      feature=as.integer(col(kmeans.result$centers)))
+    squares.dt <- i.dt[m.dt, on="feature", allow.cartesian=TRUE]
+    squares.dt[, square := (value-center)^2 ]
+    sum.squares.dt <- squares.dt[, .(
+      sum.squares=sum(square)
+    ), by=c("obs", "cluster")]
+    min.dt <- sum.squares.dt[, .(
+      min.ss=min(sum.squares)
+    ), by="obs"]
+    min.dt[, .(
+      tot.withinss=sum(min.ss)
+    ), by=.(set=shuffled.sets[obs])]
+  }, nested={
+    (set.obs.ids <- data.table(set=shuffled.sets, obs=seq_along(shuffled.sets)))
+    set.obs.ids[, {
+      set.obs.mins <- .SD[, {
+        diff.mat <- X.mat[obs, ] - t(kmeans.result$centers)
+        .(min.ss=min(colSums(diff.mat^2)))
+      }, by="obs"]
+      set.obs.mins[, .(tot.withinss=sum(min.ss))]
+    }, by="set"]
+  })
+## Unit: microseconds
+##       expr      min       lq     mean    median       uq      max neval
+##      array  803.611  855.741  912.539  885.5755  914.448 3441.247   100
+##  cartesian 4501.820 5115.034 5911.147 5836.1980 6578.374 9737.635   100
+##     nested 3752.105 3934.320 4165.045 3995.4335 4134.502 7056.370   100
+
+## array method is fastest, if you can fit it into memory. otherwise
+## nested data.table method should be preferred.

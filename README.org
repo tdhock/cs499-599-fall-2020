@@ -22,6 +22,9 @@ ESL by Hastie, Tibshirani, Friedman
 - Free PDF available from author's web page
   https://web.stanford.edu/~hastie/ElemStatLearn/
 
+Impatient R by Burns
+- [[https://www.burns-stat.com/documents/tutorials/impatient-r/][web pages]]
+
 ** Videos / Readings / Code demos
 
 [[https://drive.google.com/drive/folders/1PeTZJ29HRTM6BrsHTSHAdDfwZit8yA-P?usp=sharing][Folder of all class recordings on google drive]].
