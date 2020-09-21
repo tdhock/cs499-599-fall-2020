@@ -16,14 +16,20 @@ Please use [[https://forms.gle/NzaR9ANXhcojRnxA6][this Google Form]] for feedbac
    
 MLAPP by Murphy
 - Author's web page https://www.cs.ubc.ca/~murphyk/MLbook/
-- [[https://arizona-nau.userservices.exlibrisgroup.com/view/action/uresolver.do;jsessionid=44D57625A91B64FED37B94B305F9F939.app03.na03.prod.alma.dc04.hosted.exlibrisgroup.com:1801?operation=resolveService&package_service_id=20483326390003842&institutionId=3842&customerId=3840][full book online]]
+- [[https://arizona-nau.userservices.exlibrisgroup.com/view/action/uresolver.do;jsessionid=44D57625A91B64FED37B94B305F9F939.app03.na03.prod.alma.dc04.hosted.exlibrisgroup.com:1801?operation=resolveService&package_service_id=20483326390003842&institutionId=3842&customerId=3840][full
+  book online describing many machine learning algorithms from a
+  computer science perspective]].
 
 ESL by Hastie, Tibshirani, Friedman
 - Free PDF available from author's web page
-  https://web.stanford.edu/~hastie/ElemStatLearn/
+  https://web.stanford.edu/~hastie/ElemStatLearn/ describes many
+  machine learning algorithms from a statistics perspective.
 
 Impatient R by Burns
-- [[https://www.burns-stat.com/documents/tutorials/impatient-r/][web pages]]
+- [[https://www.burns-stat.com/documents/tutorials/impatient-r/][web pages with practical R tutorials]].
+
+Tao Te Programming by Burns
+- [[https://www.burns-stat.com/documents/books/tao-te-programming/][web page of book about how to become a good programmmer]].
 
 ** Videos / Readings / Code demos
 
