@@ -56,9 +56,9 @@ Impatient R by Burns
 - Weds Sep 16: Model selection for latent variable models, MLAPP-11.5
 - Fri Sep 18: same.
 - Mon Sep 21: Dirichlet and Chinese Restaurant Process MLAPP-25.2
-- Weds Sep 23: [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA), [[https://cran.r-project.org/web/packages/topicmodels/vignettes/topicmodels.pdf][R package
-  topicmodels vignette]].
-- Fri Sep 25: [[https://cloud.r-project.org/web/packages/dirichletprocess/vignettes/dirichletprocess.pdf][R package dirichletprocess vignette]]
+- Weds Sep 23: [[https://cloud.r-project.org/web/packages/dirichletprocess/vignettes/dirichletprocess.pdf][R package dirichletprocess vignette]]
+- Fri Sep 25: Same as Weds. Optional reading: [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic
+  Models]] (Blei LDA), [[https://cran.r-project.org/web/packages/topicmodels/vignettes/topicmodels.pdf][R package topicmodels vignette]].
 - HMM MLAPP-17.5.2
 
 ** Homeworks

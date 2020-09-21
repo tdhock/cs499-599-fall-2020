@@ -1,0 +1,34 @@
+Homework 7: Dirichlet Process Mixture Models
+
+The goal of this homework is to use the R package dirichletprocess to
+implement an infinite dimensional Gaussian mixture model, then compare
+it to finite Gaussian mixtures with model selection via
+cross-validation (mclust).
+
+1. First use rnorm to generate random data from 5 cluster centers, as
+   we did in class last week (use 20 data points per cluster
+   center). Scale the data set then use
+   dirichletprocess::DirichletProcessGaussian to fit the mixture
+   model, then use the plot function to make a figure similar to
+   Figure 1 (right) in the vignette (histogram for data, solid/dashed
+   lines for the model). Use system.time on the model fitting process
+   -- how long does it take?
+
+2. Now use mclust to fit a model with 5 clusters to the scaled
+   data. Make a plot similar to the previous one. Use geom_bar or
+   geom_histogram to plot the data. Use the mclust::dens function to
+   compute the mixture density to plot with geom_line. Do the two
+   models look similar?
+
+3. Divide the data into 50% train, 50% validation. Use mclust to fit a
+   mixture model with K=1 to 10 components on the train set, then
+   compute and plot y=validation negative log likelihood as a function
+   of x=number of components. Use system.time on the whole process
+   (excluding the plot) -- how much time does it take to do model
+   selection yourself? Is that faster or slower than the Dirichlet
+   Process mixture model?
+
+** CS599 Graduate students
+
+No extra assignment this week, instead work on your R package coding
+project.
