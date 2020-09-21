@@ -77,7 +77,7 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/4.org][4: Hierarchical clustering]] Due Fri Sep 4, 11:59PM.
 - [[file:homeworks/5.org][5: Spectral Clustering]] Due Fri Sep 11, 11:59PM.
 - [[file:homeworks/6.org][6: Model selection]] Due Fri Sep 18, 11:59PM.
-- 7: Dirichlet and Chinese Restaurant Process Due Fri Sep 25, 11:59PM.
+- [[file:homeworks/7.org][7: Dirichlet and Chinese Restaurant Process]] Due Fri Sep 25, 11:59PM.
 - [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Oct 2, 11:59PM.
 - 8: Binary segmentation Due Fri Oct 9, 11:59PM.
 - 9: Optimal segmentation Due Fri Oct 16, 11:59PM.

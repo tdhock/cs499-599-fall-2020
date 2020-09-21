@@ -270,3 +270,16 @@ microbenchmark::microbenchmark(
 
 ## array method is fastest, if you can fit it into memory. otherwise
 ## nested data.table method should be preferred.
+
+
+sum.squares.mat <- matrix(
+  NA_real_, nrow(X.mat), nrow(kmeans.result$centers),
+  dimnames=list(obs=NULL, cluster=NULL))
+for(cluster in 1:nrow(kmeans.result$centers)){
+  cluster.center.vec <- kmeans.result$centers[cluster, ]
+  squares.mat <- (cluster.center.vec - t(X.mat))^2
+  sum.squares.mat[, cluster] <- colSums(squares.mat)
+}
+min.vec <- apply(sum.squares.mat, "obs", min)
+tapply(min.vec, shuffled.sets, sum)
+kmeans.result$tot.withinss

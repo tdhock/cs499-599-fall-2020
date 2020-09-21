@@ -10,9 +10,10 @@ cross-validation (mclust).
    center). Scale the data set then use
    dirichletprocess::DirichletProcessGaussian to fit the mixture
    model, then use the plot function to make a figure similar to
-   Figure 1 (right) in the vignette (histogram for data, solid/dashed
-   lines for the model). Use system.time on the model fitting process
-   -- how long does it take?
+   Figure 1 (right) in vignette("dirichletprocess",
+   package="dirichletprocess") (histogram for data, solid/dashed lines
+   for the model). Use system.time on the model fitting process -- how
+   long does it take?
 
 2. Now use mclust to fit a model with 5 clusters to the scaled
    data. Make a plot similar to the previous one. Use geom_bar or
@@ -26,7 +27,7 @@ cross-validation (mclust).
    of x=number of components. Use system.time on the whole process
    (excluding the plot) -- how much time does it take to do model
    selection yourself? Is that faster or slower than the Dirichlet
-   Process mixture model?
+   Process mixture model from question?
 
 ** CS599 Graduate students
 
