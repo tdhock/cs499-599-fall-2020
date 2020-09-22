@@ -1,0 +1,42 @@
+[[file:Burns-Tao-Te-Programming.pdf][Selected topics from Tao Te Programming by Patrick Burns]]
+
+- 2: Program Well, cook vs chef.
+- 3: Think Chess, take time.
+- 4: Carve Reality, spot repetitions + create abstraction.
+- 8: Procrastinate, let subconscious work on hard stuff.
+- 13: Learn the Local Jargon, C vs R arrays.
+- 14: Accept Numerical Reality, math vs computers.
+- 16: Travel in Space, memory street. 
+- 18: Be a Hacker, play and experimentation.
+- 25: Be Poetic, two masters.
+- 26: Be Lazy, reduce work later.
+- 27: Be Impatient, have the computer do all of our work.
+- 28: Have Hubris, create a great solution.
+- 29: Be Consistent, variable names with numbers, pedestrian crossing,
+  kittens.
+- 30: Relish Magic, agree on definitions.
+- 31: Tell a Good Story, variable names with numbers, story 1 and 2.
+- 35: Engage Eyes, lines of code over time.
+- 36: Grow a Cathedral, forward compatible.
+- 41: Give up Control, nutcracker crows.
+- 45: Always Softcode, hardcoding is missing abstraction.
+- 46: Topple Fences, avoid arbitrary limits.
+- 47: Be Claustrophobic, time and memory constraints.
+- 48: Be Wary, check results.
+- 49: Lose Every Battle, chatter like a toddler.
+- 50: Avoid the Plague, blow up the computer before silently returning
+  the wrong answer.
+- 53: Beware Easy, how hard can it be?
+- 54: Do Not Repeat Repeat Repeat, repetition is a positive danger.
+- 58: Understand Bugs, end result of debugging is fixing two or three
+  bugs, not one.
+- 59: Spot Bugs, frogs and code freezes.
+- 60: Know Why It Works, understand why it is not working, and
+  formulate the logic that will make it work.
+- 61: Think Safety, sanity checks for automatic processes.
+- 64: Clean Up After the Flood, you found and fixed a bug but you are
+  not done.
+- 65: Play, curiosity, interest.
+- 66: Sidestep Show Stoppers, run out of gas.
+- 67: Do a Premortem, discuss the weaknesses of the project.
+

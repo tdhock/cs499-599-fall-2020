@@ -29,7 +29,8 @@ Impatient R by Burns
 - [[https://www.burns-stat.com/documents/tutorials/impatient-r/][web pages with practical R tutorials]].
 
 Tao Te Programming by Burns
-- [[https://www.burns-stat.com/documents/books/tao-te-programming/][web page of book about how to become a good programmmer]].
+- book about how to become a good programmmer.
+- [[https://www.burns-stat.com/documents/books/tao-te-programming/][web page with details about how to purchase the book]].
 
 ** Videos / Readings / Code demos
 
