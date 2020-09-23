@@ -13,7 +13,9 @@ cross-validation (mclust).
    Figure 1 (right) in vignette("dirichletprocess",
    package="dirichletprocess") (histogram for data, solid/dashed lines
    for the model). Use system.time on the model fitting process -- how
-   long does it take?
+   long does it take? Hint: use base::scale to do the data set scaling
+   (which subtracts away the mean and divides by the standard
+   deviation of each column).
 
 2. Now use mclust to fit a model with 5 clusters to the scaled
    data. Make a plot similar to the previous one. Use geom_bar or
