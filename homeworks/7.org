@@ -12,24 +12,26 @@ cross-validation (mclust).
    model, then use the plot function to make a figure similar to
    Figure 1 (right) in vignette("dirichletprocess",
    package="dirichletprocess") (histogram for data, solid/dashed lines
-   for the model). Use system.time on the model fitting process -- how
-   long does it take? Hint: use base::scale to do the data set scaling
-   (which subtracts away the mean and divides by the standard
-   deviation of each column).
+   for the model). Use system.time/microbenchmark on the model fitting
+   process -- how long does it take? Hint: use base::scale to do the
+   data set scaling (which subtracts away the mean and divides by the
+   standard deviation of each column).
 
-2. Now use mclust to fit a model with 5 clusters to the scaled
-   data. Make a plot similar to the previous one. Use geom_bar or
-   geom_histogram to plot the data. Use the mclust::dens function to
-   compute the mixture density to plot with geom_line. Do the two
-   models look similar?
+2. Now use mclust to fit a model with 5 clusters to the scaled data
+   (modelNames="V" means a different variance parameter for each
+   cluster, which would be the most direct comparison with what
+   dirichletprocess does). Make a plot similar to the previous
+   one. Use geom_bar or geom_histogram to plot the data. Use the
+   mclust::dens function to compute the mixture density to plot with
+   geom_line. Do the two models look similar?
 
 3. Divide the data into 50% train, 50% validation. Use mclust to fit a
    mixture model with K=1 to 10 components on the train set, then
    compute and plot y=validation negative log likelihood as a function
-   of x=number of components. Use system.time on the whole process
-   (excluding the plot) -- how much time does it take to do model
-   selection yourself? Is that faster or slower than the Dirichlet
-   Process mixture model from question?
+   of x=number of components. Use system.time/microbenchmark on the
+   whole process (excluding the plot) -- how much time does it take to
+   do model selection yourself? Is that faster or slower than the
+   Dirichlet Process mixture model from question?
 
 ** CS599 Graduate students
 
