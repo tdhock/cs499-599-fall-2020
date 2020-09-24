@@ -21,9 +21,10 @@ cross-validation (mclust).
    (modelNames="V" means a different variance parameter for each
    cluster, which would be the most direct comparison with what
    dirichletprocess does). Make a plot similar to the previous
-   one. Use geom_bar or geom_histogram to plot the data. Use the
-   mclust::dens function to compute the mixture density to plot with
-   geom_line. Do the two models look similar?
+   one. Use geom_histogram(aes(x=feature, y=..density..)) to plot the
+   data. Use the mclust::dens(logarithm=FALSE) function to compute the mixture density
+   on a grid of points from the min to the max of your random data,
+   and plot with geom_line. Do the two models look similar?
 
 3. Divide the data into 50% train, 50% validation. Use mclust to fit a
    mixture model with K=1 to 10 components on the train set, then

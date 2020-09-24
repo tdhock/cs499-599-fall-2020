@@ -27,8 +27,9 @@ clustering.
 
 3. Show that validation negative log likelihood CAN be used as a model
    selection criterion for Gaussian Mixture Models. Use mclust::Mclust
-   on the train data, for 1 to 20 clusters, and for a single value of
-   modelNames (e.g. VEV for ellipsoidal, equal shape). Remember you
+   on the train data, for 1 to 50 clusters (or even more clusters if
+   the validation curve does not go back up), and for a single value
+   of modelNames (e.g. VEV for ellipsoidal, equal shape). Remember you
    can use a subset of data for the initialization to reduce
    computation time. Use mclust::dens to compute a vector of log
    likelihood values, one for each observation (in both
@@ -55,9 +56,10 @@ kmeans sum of squares on random uniform data.
   zip.test data matrix you cluster.
 - Generate 20 random matrices, as they did in ESL Figure 14.11.
 - Compute kmeans for 1 to KMAX clusters (where KMAX=40 or maybe
-  larger, make sure you can see a maximum in the gap statistic), for
-  each of the 21 data sets (zip.test + 20 random uniform). For clarity
-  use a for loop over a list with 21 elements.
+  larger, make sure that the gap statistic is not choosing KMAX as the
+  best number of clusters), for each of the 21 data sets (zip.test +
+  20 random uniform). For clarity use a for loop over a list with 21
+  elements.
 - Compute the quantities shown in ESL Figure 14.11, and make two
   ggplots. The first plot is y=normalized sum of squares as a function
   of x=number of clusters, zip.test line in green, mean uniform random
