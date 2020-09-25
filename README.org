@@ -96,6 +96,7 @@ quality/style/efficiency in each of your homeworks.
 - 12: Sparse PCA Due Fri Nov 6, 11:59PM.
 - 13: t-SNE Due Fri Nov 13, 11:59PM.
 - 14: autoencoders Due Fri Nov 20, 11:59PM.
+- [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Nov 27, 11:59PM.
 
 General Questions and Answers
 - can I do my homework with an older version of R? Maybe, try it if
