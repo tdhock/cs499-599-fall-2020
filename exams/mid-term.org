@@ -1,0 +1,18 @@
+1. Describe the general clustering problem. What are the inputs to a
+   clustering algorithm, and what are the outputs? 
+
+2. Assuming there are some gold standard labels available, explain how
+   the labels can be used to quantitatively evaluate a clustering
+   algorithm. What value(s) do you compute, and how do you interpret
+   them?
+
+3. Explain the K-means algorithm in terms of the input/initialization,
+   iterations, when to stop, and what values to output/return.
+
+4. Explain the agglomerative hierarchical clustering algorithm in
+   terms of the input/initialization, iterations, when to stop, and
+   what values to output/return.
+
+5. What is model selection? Explain how cross-validation can be used
+   for clustering model selection.
+
