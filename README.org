@@ -67,8 +67,13 @@ Tao Te Programming by Burns
 - Weds Sep 23: [[https://cloud.r-project.org/web/packages/dirichletprocess/vignettes/dirichletprocess.pdf][R package dirichletprocess vignette]], [[file:2020-09-25-dirichlet-process/][Murphy
   figures/text]].
 - Fri Sep 25: Same as Weds. Optional reading:
-  [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM
-  Intro to Topic Models]] (Blei LDA), [[https://cran.r-project.org/web/packages/topicmodels/vignettes/topicmodels.pdf][R package topicmodels vignette]].
+  [[http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf][Comm ACM Intro to Topic Models]] (Blei LDA), [[https://cran.r-project.org/web/packages/topicmodels/vignettes/topicmodels.pdf][R package topicmodels vignette]].
+- Mon Sep 28: [[file:exams/mid-term.org][Practice mid-term exam]].
+- Weds Sep 30: Solutions to practice mid-term exam.
+- Fri Oct 2: Real mid-term exam.
+- Mon Oct 5: Binary segmentation. 
+- Weds Oct 7: TODO.
+- Fri Oct 9: TODO.
 - HMM MLAPP-17.5.2
 
 ** Homeworks
@@ -88,7 +93,7 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/5.org][5: Spectral Clustering]] Due Fri Sep 11, 11:59PM.
 - [[file:homeworks/6.org][6: Model selection]] Due Fri Sep 18, 11:59PM.
 - [[file:homeworks/7.org][7: Dirichlet and Chinese Restaurant Process]] Due Fri Sep 25, 11:59PM.
-- [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Oct 2, 11:59PM.
+- [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Sun Oct 4, 11:59PM.
 - 8: Binary segmentation Due Fri Oct 9, 11:59PM.
 - 9: Optimal segmentation Due Fri Oct 16, 11:59PM.
 - 10: Hidden Markov Models Due Fri Oct 23, 11:59PM. 

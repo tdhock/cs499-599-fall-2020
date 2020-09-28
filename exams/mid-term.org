@@ -13,6 +13,15 @@
    terms of the input/initialization, iterations, when to stop, and
    what values to output/return.
 
-5. What is model selection? Explain how cross-validation can be used
-   for clustering model selection.
+5. What is model selection? Explain how cross-validation (e.g., a 50%
+   train, 50% validation split) can be used for clustering model
+   selection.
+
+Rubric: minus points for incomplete and/or off-topic responses.
+
+Volunteers to present solutions on Wednesday Sept 28: Chris Keefe,
+Alyssa Stenberg, Jonathan Hillman, Tom Nemeth, Weiheng Su.
+
+For the real mid-term on Friday Oct 2 at 8:00AM-8:50AM, what would be
+the analogous questions for the other topics that we have studied?
 
