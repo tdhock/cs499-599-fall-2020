@@ -71,9 +71,13 @@ Tao Te Programming by Burns
 - Mon Sep 28: [[file:exams/mid-term.org][Practice mid-term exam]].
 - Weds Sep 30: Solutions to practice mid-term exam.
 - Fri Oct 2: Real mid-term exam.
-- Mon Oct 5: Binary segmentation. 
-- Weds Oct 7: TODO.
-- Fri Oct 9: TODO.
+- Mon Oct 5: Intro to changepoint detection [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] sections 1-2.
+- Weds Oct 7: Binary segmentation. [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.2.2
+- Fri Oct 9: Estimating the number of changes.  [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]]
+  section 6.
+- Mon Oct 12: Optimal detection, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.1.
+- Weds Oct 14: TODO
+- Fri Oct 15: 
 - HMM MLAPP-17.5.2
 
 ** Homeworks
@@ -94,7 +98,7 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/6.org][6: Model selection]] Due Fri Sep 18, 11:59PM.
 - [[file:homeworks/7.org][7: Dirichlet and Chinese Restaurant Process]] Due Fri Sep 25, 11:59PM.
 - [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Sun Oct 4, 11:59PM.
-- 8: Binary segmentation Due Fri Oct 9, 11:59PM.
+- [[file:homeworks/8.org][8: Binary segmentation]] Due Fri Oct 9, 11:59PM.
 - 9: Optimal segmentation Due Fri Oct 16, 11:59PM.
 - 10: Hidden Markov Models Due Fri Oct 23, 11:59PM. 
 - 11: Principal Components Analysis Due Fri Oct 30, 11:59PM.
