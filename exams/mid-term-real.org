@@ -1,0 +1,33 @@
+1. Describe the general clustering problem. What are the inputs to a
+   clustering algorithm, and what are the outputs? 
+
+2. Assuming there are some gold standard labels available, explain how
+   you could use the labels to quantitatively compare two clustering
+   algorithms that need random initializations (e.g., K-means and
+   Gaussian Mixture Models). What value(s) do you compute for each
+   algorithm, how do you interpret them, in terms of which algorithm
+   is more/less accurate?
+
+3. Explain the Expectation-Maximization algorithm for fitting a
+   Gaussian Mixture model (given a fixed number of clusters K) in
+   terms of the input/initialization, iterations, when to stop, and
+   what values to output/return.
+
+4. Explain the agglomerative hierarchical clustering algorithm in
+   terms of the input/initialization, iterations, when to stop, and
+   what values to output/return.
+
+5. What is model selection? Explain how cross-validation (e.g., a 50%
+   train, 50% validation split) can be used for clustering model
+   selection, specifically in the context of Gaussian Mixture
+   Models. What do you need to compute/plot, and what model should you
+   select?
+
+Rubric: minus points for incomplete and/or off-topic responses.
+
+Volunteers to present solutions on Wednesday Sept 28: Chris Keefe,
+Alyssa Stenberg, Jonathan Hillman, Tom Nemeth, Weiheng Su.
+
+For the real mid-term on Friday Oct 2 at 8:00AM-8:50AM, what would be
+the analogous questions for the other topics that we have studied?
+
