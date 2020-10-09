@@ -26,17 +26,18 @@ models for sequence data, and compare the speed of two R packages.
    data have no significant changes) or false negatives (no change
    predicted where the data has a significant change)?
 
-20 Extra credit points: Use changepoint::cpt.mean(logratio_vector,
-Q=100, method="BinSeg", penalty="Manual") to compute the same binary
-segmentation model, up to 100 segments, on a wide range of data
-sequences (each data sequence is a unique combination of
-profile.id/chromosome values, each has a different number of rows, you
-should compute the binary segmentation models for the smallest/largest
-data sets and some in between). Use microbenchmark to compute timings
-of binsegRcpp with 100 segments as well. Make a ggplot with log-log
-axes that compares the computation times of the two
-algorithms. (x=data size, y=seconds, color=package) Are there any
-significant speed differences?
+20 Extra credit points: Do a speed comparison of two different
+implementations of binary segmentation. Use
+changepoint::cpt.mean(logratio_vector, Q=100, method="BinSeg",
+penalty="Manual") to compute the same binary segmentation model, up to
+100 segments, on a wide range of data sequences (each data sequence is
+a unique combination of profile.id/chromosome values, each has a
+different number of rows, you should compute the binary segmentation
+models for the smallest/largest data sets and some in between). Use
+microbenchmark to compute timings of binsegRcpp with 100 segments as
+well. Make a ggplot with log-log axes that compares the computation
+times of the two algorithms. (x=data size, y=seconds, color=package)
+Are there any significant speed differences?
 
 ** CS599 graduate students only
 
