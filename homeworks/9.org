@@ -45,8 +45,8 @@ reference.
 
 - Your function should input a vector of numeric data, and a maximum
   number of segments parameter (positive integer). It should begin by
-  initializing matrices (nrow = max segments, ncol = number of data
-  points), cost_mat (a dynamic programming optimal cost matrix). 
+  initializing matrix cost_mat (a dynamic programming optimal cost
+  matrix), with nrow = max segments, ncol = number of data points.
 - Use the square loss / mean squared error as the cost function to
   minimize with dynamic programming. Begin by filling in the first row
   with the optimal cost values for the models with one segment (you
