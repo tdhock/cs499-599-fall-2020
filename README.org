@@ -75,10 +75,11 @@ Tao Te Programming by Burns
 - Weds Oct 7: Binary segmentation. [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.2.2
 - Fri Oct 9: Estimating the number of changes.  [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]]
   section 6.
-- Mon Oct 12: Optimal detection, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.1.
-- Weds Oct 14: Models and cost functions,  [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] section 4.
-- Fri Oct 15: 
-- HMM MLAPP-17.5.2
+- Mon Oct 12: Optimal detection, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.1. [[file:2020-10-12-dynamic-programming-slides.pdf][Dynamic programming
+  slides PDF]].
+- Weds Oct 14: Models and cost functions, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] section 4.
+- Fri Oct 15: same.
+- Mon Oct 18: Hidden Markov Models, MLAPP-17.5.2.
 
 ** Homeworks
 
