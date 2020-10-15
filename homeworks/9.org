@@ -6,8 +6,8 @@ segmentation algorithm.
 
 1. programmatically download the following files, which contain
    raw/noisy data signals and labels for several different sequenceID
-   numbers. For each file, what is the min/max number of data/labels
-   per sequenceID? 
+   numbers. For each file, what is the min/max number of rows
+   (data/labels) per sequenceID?
 
 - https://raw.githubusercontent.com/tdhock/LOPART-paper/master/data-for-LOPART-signals.csv.gz
 - https://raw.githubusercontent.com/tdhock/LOPART-paper/master/data-for-LOPART-labels.csv.gz
@@ -25,7 +25,8 @@ segmentation algorithm.
    (geom_vline), with different algorithms in different panels from
    top to bottom (facet_grid). Choose a model size that shows a clear
    difference between binseg/DP. In what parts of the data does the DP
-   fit better than binseg?
+   fit better than binseg? Hint: you may need to zoom in to show
+   details around the changepoints using xlim(start.pos, end.pos)
 
 EXTRA CREDIT 20 points. changepoint::cpt.mean(data_vector,
 method="SegNeigh", penalty="Manual", Q=max.segs) is an implementation
