@@ -78,8 +78,10 @@ Tao Te Programming by Burns
 - Mon Oct 12: Optimal detection, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] 5.1. [[file:2020-10-12-dynamic-programming-slides.pdf][Dynamic programming
   slides PDF]].
 - Weds Oct 14: Models and cost functions, [[https://arxiv.org/pdf/1801.00718.pdf][Truong et al]] section 4.
-- Fri Oct 15: same.
-- Mon Oct 18: Hidden Markov Models, MLAPP-17.5.2.
+- Fri Oct 16: same.
+- Mon Oct 19: [[file:depmixS4.pdf][depmixS4 vignette]] section 2.
+- Weds Oct 21: Hidden Markov Models, MLAPP-17.5.2.
+- Fri Oct 23: TODO
 
 ** Homeworks
 
@@ -101,7 +103,7 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Sun Oct 4, 11:59PM.
 - [[file:homeworks/8.org][8: Binary segmentation]] Due Fri Oct 9, 11:59PM.
 - [[file:homeworks/9.org][9: Optimal segmentation]] Due Fri Oct 16, 11:59PM.
-- 10: Hidden Markov Models Due Fri Oct 23, 11:59PM. 
+- [[file:homeworks/10.org][10: Hidden Markov Models]] Due Fri Oct 23, 11:59PM. 
 - 11: Principal Components Analysis Due Fri Oct 30, 11:59PM.
 - 12: Sparse PCA Due Fri Nov 6, 11:59PM.
 - 13: t-SNE Due Fri Nov 13, 11:59PM.
