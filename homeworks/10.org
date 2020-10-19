@@ -18,11 +18,11 @@ data set and compare them to optimal changepoint models.
    show the mean (geom_segment), the standard deviation (geom_rect),
    and the changepoints (geom_vline). How many changepoints are there?
 
-4. Run changepoint::cpt.meanvar(Q=the same number of segments as in
-   the HMM) to compute the corresponding optimal changepoint model,
-   and plot that model on top of the data (same as in problem
-   3). Which model seems to be a better fit, or are they about the
-   same?
+4. Run changepoint::cpt.meanvar(method="SegNeigh", Q=the same number
+   of segments as in the HMM) to compute the corresponding optimal
+   changepoint model, and plot that model on top of the data (same as
+   in problem 3). Which model seems to be a better fit, or are they
+   about the same?
 
 *** CS599 Graduate students only
 
