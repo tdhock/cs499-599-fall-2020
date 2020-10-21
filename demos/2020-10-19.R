@@ -35,6 +35,9 @@ post.dt[, index := 1:.N]
 
 states.for.data <- resp.dt[post.dt, on="state"]
 
+states.for.data[, sum(dnorm(pro.dt$logratio, mean, sd, log=TRUE))]
+hmm.fit
+
 pro.dt[, index := 1:.N]
 ggplot()+
   geom_point(aes(

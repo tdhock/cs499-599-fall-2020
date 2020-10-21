@@ -36,10 +36,16 @@ the two packages (changepoint and depmixS4).
   larger likelihood (better fit to data).
 - Run HMM for nstates=1 to 10, and compute the number of segments in
   each model. For each model use changepoint::cpt.meanvar(Q=that
-  number of segments).
+  number of segments, penalty="Manual", method="SegNeigh").
 - Save segment mean/sd/start/end parameters for both algorithms and
-  all model sizes in a single data table. 
-- Compute the negative log likelihood using stats::dnorm function, and
-  plot it as a function of the number of segments, different
-  algorithms in different colors (e.g., red=HMM, black=DP). Is the
-  curve lower for DP as expected?
+  all model sizes in a single data table. For cpt.meanvar you will
+  need to examine the @param.est and @cpts slots in order to get the
+  mean/sd/start/end values.
+- Compute the negative log likelihood using
+  -sum(stats::dnorm(vector_of_your_data, mean =
+  vector_of_fitted_means, sd = vector_of_fitted_sds, log = FALSE)).
+  Note that this is NOT the same as the value returned by the
+  depmixS4::logLik function (which also includes transition
+  likelihood). Plot the negative log likelihood as a function of the
+  number of segments, different algorithms in different colors (e.g.,
+  red=HMM, black=DP). Is the curve lower for DP as expected?
