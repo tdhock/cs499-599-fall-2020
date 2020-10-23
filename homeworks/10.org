@@ -46,6 +46,15 @@ the two packages (changepoint and depmixS4).
   vector_of_fitted_means, sd = vector_of_fitted_sds, log = FALSE)).
   Note that this is NOT the same as the value returned by the
   depmixS4::logLik function (which also includes transition
-  likelihood). Plot the negative log likelihood as a function of the
-  number of segments, different algorithms in different colors (e.g.,
-  red=HMM, black=DP). Is the curve lower for DP as expected?
+  likelihood). 
+- If you get infinite negative log likelihood, that is probably
+  because there is a segment with two data points with the same value
+  and zero variance. This is [[https://github.com/rkillick/changepoint/issues/49][a known issue]] with the cpt.meanvar
+  function. You can work around this issue by
+  - try cpt.meanvar(minseglen=3), to increase the minimum segment
+    length (the default is 2).
+  - OR remove the repeated data before computing the parameters of
+    both algorithms.
+- Plot the negative log likelihood as a function of the number of
+  segments, different algorithms in different colors (e.g., red=HMM,
+  black=DP). Is the curve lower for DP as expected?
