@@ -5,7 +5,7 @@
 data(neuroblastoma, package="neuroblastoma")
 library(data.table)
 
-pro.dt <- data.table(neuroblastoma$profiles)[profile.id=="4" & chromosome=="2"]
+pro.dt <- data.table(neuroblastoma$profiles)[profile.id=="79" & chromosome=="2"]
 
 library(animint2)
 ggplot()+

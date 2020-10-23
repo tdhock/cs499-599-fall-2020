@@ -82,6 +82,9 @@ Tao Te Programming by Burns
 - Mon Oct 19: [[file:depmixS4.pdf][depmixS4 vignette]] section 2.
 - Weds Oct 21: Markov Models, MLAPP-17.2.
 - Fri Oct 23: Hidden Markov Models, MLAPP-17.3-5.
+- Mon Oct 26: bye.
+- Weds Oct 28: 
+- Fri Oct 30:
 
 ** Homeworks
 
@@ -104,8 +107,8 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/8.org][8: Binary segmentation]] Due Fri Oct 9, 11:59PM.
 - [[file:homeworks/9.org][9: Optimal segmentation]] Due Fri Oct 16, 11:59PM.
 - [[file:homeworks/10.org][10: Hidden Markov Models]] Due Fri Oct 23, 11:59PM. 
-- 11: Principal Components Analysis Due Fri Oct 30, 11:59PM.
-- 12: Sparse PCA Due Fri Nov 6, 11:59PM.
+- [[file:homeworks/11.org][11: Segmentation model selection and evaluation]] Due Fri Oct 30, 11:59PM.
+- 12: Principal Components Analysis Fri Nov 6, 11:59PM.
 - 13: t-SNE Due Fri Nov 13, 11:59PM.
 - 14: autoencoders Due Fri Nov 20, 11:59PM.
 - [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Nov 27, 11:59PM.

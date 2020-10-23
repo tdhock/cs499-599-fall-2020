@@ -1,0 +1,62 @@
+Segmentation model selection and evaluation
+
+The goals of this homework are to 
+- explore how a subtrain/validation split can be used to select the
+  segmentation model size parameter.
+- compare segmentation models in terms of label error rates and ROC
+  curves.
+
+1. For data sequence profile.id=79, chromosome=2 in the neuroblastoma
+   data, assign observations to 50% subtrain 50% validation sets. How
+   many observations are in each set? Hint: use table(set).
+
+2. Use binsegRcpp::binseg_normal to compute models from 1 to 10
+   segments on the subtrain data, then compute one data table with
+   predicted changepoint positions, and another data table with
+   segment start/end values (in terms of the full data
+   indices/positions, not just the subtrain set). Plot these models on
+   top of the data (use points with different color/fill for different
+   sets, black=subtrain, red=validation), and use facet_grid(segments
+   ~ .)  to draw each model size in a different panel. After how many
+   segments does the model appear to overfit?
+
+3. Compute the square loss for each model size and set, and store
+   these numbers in a data table with columns segments,set,loss. Plot
+   the loss as a function of the number of segments, with different
+   sets in different colors (black=subtrain, red=validation). Based on
+   the loss values/plot, what is the number of segments you should
+   select?
+
+4. Compute model selection criteria = loss + penalty*segments, for
+   penalty=2 (AIC) and penalty=log(N.data) (BIC). Save these numbers
+   in a single data table with columns segments, crit.name(AIC/BIC),
+   crit.value(numeric value defined in equation above). Then plot them
+   using different colors for different penalties (e.g., AIC=blue,
+   BIC=orange). Do the two criteria select the same number of
+   segments?
+
+** CS599 graduate students only
+
+The goal is to run binsegRcpp::binseg_normal on ALL labeled
+neuroblastoma data sequences, and compare two model selection criteria
+(AIC/BIC) in terms of label error rates and ROC curves.
+- You should have a for loop over rows of the "annotations" data
+  table, since there is only one label/row per data sequence.
+- For each sequence you should run binary segmentation up to 20
+  segments. Use penaltyLearning::modelSelection to compute a data
+  table representing the model selection function (which maps penalty
+  values to model sizes). Then use the model selection data table as
+  input to penaltyLearning::labelError, which computes the number of
+  incorrectly predicted labels as a function of the
+  penalty/lambda. Also compute a data table of predicted penalty
+  values for AIC/BIC with two rows and columns
+  sequenceID,crit.name,pred.log.lambda.
+- After your for loop is done, combine the results into two data
+  tables (label errors and predicted penalties). Use
+  penaltyLearning::ROChange to compute a ROC curve for each model
+  (AIC/BIC). Plot the ROC curves, using a different color for each
+  model (e.g., AIC=blue, BIC=orange). Which model has a larger area
+  under the curve?
+- Also inspect the thresholds element of the ROChange result in order
+  to see the number of label errors per model. Which model has a
+  smaller number of predicted label errors?
