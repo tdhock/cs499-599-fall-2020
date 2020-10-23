@@ -36,7 +36,10 @@ the two packages (changepoint and depmixS4).
   larger likelihood (better fit to data).
 - Run HMM for nstates=1 to 10, and compute the number of segments in
   each model. For each model use changepoint::cpt.meanvar(Q=that
-  number of segments, penalty="Manual", method="SegNeigh").
+  number of segments, penalty="Manual", method="SegNeigh"). If you get
+  an error for large nstates try a smaller number of states (less than
+  ten) or use tryCatch(code, error=function(e)NULL) to catch the
+  error.
 - Save segment mean/sd/start/end parameters for both algorithms and
   all model sizes in a single data table. For cpt.meanvar you will
   need to examine the @param.est and @cpts slots in order to get the
