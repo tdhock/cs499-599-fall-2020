@@ -50,7 +50,9 @@ neuroblastoma data sequences, and compare two model selection criteria
   incorrectly predicted labels as a function of the
   penalty/lambda. Also compute a data table of predicted penalty
   values for AIC/BIC with two rows and columns
-  sequenceID,crit.name,pred.log.lambda.
+  sequenceID,crit.name,pred.log.lambda. Hint: for reference/example
+  see
+  http://members.cbio.mines-paristech.fr/~thocking/change-tutorial/Supervised.html
 - After your for loop is done, combine the results into two data
   tables (label errors and predicted penalties). Use
   penaltyLearning::ROChange to compute a ROC curve for each model
@@ -60,3 +62,21 @@ neuroblastoma data sequences, and compare two model selection criteria
 - Also inspect the thresholds element of the ROChange result in order
   to see the number of label errors per model. Which model has a
   smaller number of predicted label errors?
+
+EXTRA CREDIT 20 points: do the same analysis with model selected via
+50/50 cross-validation (in addition to the two models AIC/BIC
+described above).
+
+FAQ: what is train and subtrain sets?
+
+we split full data into train/test sets.
+
+Then we split the train data into subtrain/validation sets.
+
+purpose of each set:
+- test: not used at all to learn model parameters, instead just used
+  at the end, after all parameters have been learned, to evaluate
+  prediction error/accuracy.
+- validation: used to learn hyper-parameters. (e.g., states/segments)
+- subtrain: used to learn regular model parameters (e.g.,
+  changepoints/segment means), given a fixed set of hyper-parameters.

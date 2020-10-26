@@ -82,9 +82,9 @@ Tao Te Programming by Burns
 - Mon Oct 19: [[file:depmixS4.pdf][depmixS4 vignette]] section 2.
 - Weds Oct 21: Markov Models, MLAPP-17.2.
 - Fri Oct 23: Hidden Markov Models, MLAPP-17.3-5.
-- Mon Oct 26: bye.
-- Weds Oct 28: 
-- Fri Oct 30:
+- Mon Oct 26: same.
+- Weds Oct 28: Learning for HMMs, MLAPP-17.5.
+- Fri Oct 30: AIC/BIC, MLAPP-5.3.2.4, ESL-7.5.
 
 ** Homeworks
 
