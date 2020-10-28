@@ -113,7 +113,7 @@ nstates.segs <- do.call(rbind, nstates.segs.list)
 loss.dt <- do.call(rbind, loss.dt.list)
 
 penalty <- 10
-loss.dt[, crit.value := loss + penalty * nstates]
+loss.dt[, criterion.value := loss + penalty * nstates]
 loss.dt[, .(
-  selected.states=nstates[which.min(crit.value)]
+  selected.states=nstates[which.min(criterion.value)]
 ), by=.(profile.id, chromosome)]
