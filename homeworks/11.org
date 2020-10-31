@@ -14,11 +14,12 @@ The goals of this homework are to
    segments on the subtrain data, then compute one data table with
    predicted changepoint positions, and another data table with
    segment start/end values (in terms of the full data
-   indices/positions, not just the subtrain set). Plot these models on
-   top of the data (use points with different color/fill for different
-   sets, black=subtrain, red=validation), and use facet_grid(segments
-   ~ .)  to draw each model size in a different panel. After how many
-   segments does the model appear to overfit?
+   indices/positions, not just the subtrain set). Plot the
+   segments/changepoints on top of the data (use points with different
+   color/fill for different sets, black=subtrain, red=validation), and
+   use facet_grid(segments ~ .)  to draw each model size in a
+   different panel. After how many segments does the model appear to
+   overfit?
 
 3. Compute the square loss for each model size and set, and store
    these numbers in a data table with columns segments,set,loss. Plot
