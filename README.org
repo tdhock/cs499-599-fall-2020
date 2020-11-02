@@ -92,8 +92,8 @@ Tao Te Programming by Burns
 - Fri Oct 30: AIC/BIC, MLAPP-5.3.2.4, ESL-7.5. [[http://members.cbio.mines-paristech.fr/~thocking/figure-max-auc/][Changepoint ROC curve
   interactive data viz]].
 - Mon Nov 2: Principal Components Analysis, ESL-14.5.
-- Weds Nov 4: TODO.
-- Fri Nov 6: 
+- Weds Nov 4: same.
+- Fri Nov 6: MLAPP-12.2.
 
 ** Homeworks
 
