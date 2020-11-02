@@ -6,7 +6,7 @@ for dimensionality reduction in a data set of handwritten digit images.
    shows each row with its corresponding class label (x=PC1, y=PC2,
    label=class). Do the classes cluster together in the plot?
 
-2. For each number of principal components from 1 to 100, compute and
+2. For each number of principal components from 1 to 100, compute 
    the reconstruction error (sum of squares between the data and
    model). Then plot y=error as a function of x=number of
    components. Is the reconstruction error zero at 100 components as
