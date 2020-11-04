@@ -9,6 +9,7 @@ gg <- ggplot()+
     y=Petal.Length, x=Sepal.Width),
     data=i.df)+
   coord_equal()
+gg
 
 pc.fit <- prcomp(i.df)
 str(pc.fit)
@@ -16,7 +17,7 @@ pc.fit[["rotation"]]
 
 
 lambda.vec <- seq(-4, 4)
-lambda.vec <- pc.fit$x[,1]
+##lambda.vec <- pc.fit$x[,1] ## this is lambda from the book!
 line.dt.list <- list()
 PC1 <- pc.fit[["rotation"]][,1]
 f <- function(l)mean.vec + l * PC1
