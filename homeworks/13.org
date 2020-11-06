@@ -1,0 +1,50 @@
+The goal of this homework is to use an auto-encoder to learn a low
+dimensional nonlinear mapping of a high dimensional data set, and
+compare to the PCA linear mapping.
+
+1. first select 100 rows of the zip.train data from the ESL book (10
+   from each class). For these data use the keras R package to define
+   an auto-encoder with only one hidden layer with two units, using
+   keras::keras_model_sequential and keras::layer_dense. How many
+   parameters are there to learn in this nonlinear model? How many
+   parameters are there to learn in the corresponding PCA linear model
+   with rank=2? Is the number of parameters in the auto-encoder larger
+   as expected?
+
+2. Now learn the auto-encoder parameters using keras::compile (with
+   keras::loss_mean_squared_error) and keras::fit. Use the predict
+   function to compute the predicted values. Also compute a PCA with
+   rank=2 and compute its predicted values. What is the reconstruction
+   error (mean squared error between data and predicted values) for
+   the two methods? Is the auto-encoder more accurate as expected?
+
+3. Now use keras::keras_model, keras::get_layer, and predict functions
+   to compute the low-dimensional embedding of the original train
+   data. Make a ggplot with these auto-encoder embeddings in one
+   panel, and the PCA in another panel. Use geom_text(label=digit) or
+   geom_point(color=digit) to visualize the different digit
+   classes. Which of the two methods results in better separation
+   between digit classes?
+
+** CS599 graduate students only
+
+Your job is to investigate a deep auto-encoder, and see whether or not
+it is more prone to overfitting than the shallow auto-encoder
+described above. 
+- First decide on a number of hidden units U to use in the
+  intermediate layers. If your input data dimension is D then there
+  should be five neural network layers with sizes (D, U, 2, U,
+  D). Typically U should be chosen such that 2<U<D.
+- Create a variable named model.list, which should be a list of two
+  keras models (shallow=previous model with three layers described
+  above, deep=new model with five layers). Make a for loop over these
+  two models, and use keras::fit(validation_split=0.5) to learn
+  parameters for each model using a 50% subtrain, 50% validation
+  split.
+- Make a ggplot of y=square loss as a function of x=iterations, with
+  different sets in different colors (e.g., subtrain=black,
+  validation=red), and the two different models in two different
+  panels, facet_grid(. ~ model). Does either model overfit?
+- Finally make another ggplot which displays the low dimensional
+  embeddings, as in problem 3 above. Which of the two methods results
+  in better separation between digit classes?
