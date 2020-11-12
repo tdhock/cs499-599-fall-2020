@@ -5,18 +5,22 @@ compare to the PCA linear mapping.
 1. first select 100 rows of the zip.train data from the ESL book (10
    from each class). For these data use the keras R package to define
    an auto-encoder with only one hidden layer with two units, using
-   keras::keras_model_sequential and keras::layer_dense. How many
-   parameters are there to learn in this nonlinear model? How many
-   parameters are there to learn in the corresponding PCA linear model
-   with rank=2? Is the number of parameters in the auto-encoder larger
-   as expected?
+   keras::keras_model_sequential and
+   keras::layer_dense(activation="relu" or "sigmoid") for the
+   intermediate layer and linear activation for the last layer. How
+   many parameters are there to learn in this nonlinear model? How
+   many parameters are there to learn in the corresponding PCA linear
+   model with rank=2?  Is the number of parameters in the auto-encoder
+   larger as expected?
 
 2. Now learn the auto-encoder parameters using keras::compile (with
    keras::loss_mean_squared_error) and keras::fit. Use the predict
    function to compute the predicted values. Also compute a PCA with
    rank=2 and compute its predicted values. What is the reconstruction
    error (mean squared error between data and predicted values) for
-   the two methods? Is the auto-encoder more accurate as expected?
+   the two methods? Is the auto-encoder more accurate as expected? If
+   not, try increasing the number epochs, and/or the learning rate (lr
+   parameter of optimizer_sgd).
 
 3. Now use keras::keras_model, keras::get_layer, and predict functions
    to compute the low-dimensional embedding of the original train
@@ -37,10 +41,11 @@ described above.
   D). Typically U should be chosen such that 2<U<D.
 - Create a variable named model.list, which should be a list of two
   keras models (shallow=previous model with three layers described
-  above, deep=new model with five layers). Make a for loop over these
-  two models, and use keras::fit(validation_split=0.5) to learn
-  parameters for each model using a 50% subtrain, 50% validation
-  split.
+  above, deep=new model with five layers). Make sure that in the five
+  layer model there are non-linear activations for all layers but the
+  last. Make a for loop over these two models, and use
+  keras::fit(validation_split=0.5) to learn parameters for each model
+  using a 50% subtrain, 50% validation split.
 - Make a ggplot of y=square loss as a function of x=iterations, with
   different sets in different colors (e.g., subtrain=black,
   validation=red), and the two different models in two different
