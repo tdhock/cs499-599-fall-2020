@@ -121,8 +121,8 @@ quality/style/efficiency in each of your homeworks.
 - [[file:homeworks/10.org][10: Hidden Markov Models]] Due Fri Oct 23, 11:59PM. 
 - [[file:homeworks/11.org][11: Segmentation model selection and evaluation]] Due Fri Oct 30, 11:59PM.
 - [[file:homeworks/12.org][12: Principal Components Analysis]] Fri Nov 6, 11:59PM.
-- [[file:homeworks/13.org][13: auto-encoders]] Due Fri Nov 13, 11:59PM.
-- 14: t-SNE Due Fri Nov 20, 11:59PM.
+- [[file:homeworks/13.org][13: auto-encoders]] Due Weds Nov 18, 11:59PM.
+- 14: CANCELLED 
 - [[file:homeworks/Rpkg.org][Grad student R package coding project]] Due Fri Nov 27, 11:59PM.
 
 General Questions and Answers
