@@ -32,7 +32,7 @@ Rubric: 20 points for each question. Minus points for incomplete
 and/or off-topic responses.
 
 EXTRA CREDIT: 10 points for ALL students if ALL students have
-completed the course eval by the end of the day Friday Nov 20.
+completed the course eval by the final due date on Thursday!
 
 For the real final exam on Friday Nov 20 at 7:30AM-9:30AM, what would be
 the analogous questions for the other topics that we have studied?
@@ -46,4 +46,5 @@ Other questions that may appear on the final:
 - Describe the general segmentation / changepoint detection
   problem. What are the inputs to a changepoint algorithm, and what
   are the outputs?
-
+- concept of loss function which always decreases as the model size
+  increases for train set and U shape for validation set.

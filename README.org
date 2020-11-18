@@ -97,7 +97,7 @@ Tao Te Programming by Burns
 - Mon Nov 9: Deep generative models, MLAPP-28.2 to 28.3.
 - Weds Nov 11: Deep auto-encoders, MLAPP-28.3.2.
 - Fri Nov 13: MLAPP-28.4.2 to 28.4.3.
-- Fri Nov 18: [[file:exams/final.org][practice final exam]]
+- Weds Nov 18: [[file:exams/final.org][practice final exam]]
 - Fri Nov 20: real final exam, 7:30-9:30.
 
 ** Homeworks
