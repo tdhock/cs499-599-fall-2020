@@ -1,0 +1,49 @@
+Practice final exam
+
+1. Assume you have a data sequence in which you want to find K changes
+   in mean. What kind of model parameters are there to infer, and how
+   many of each parameter are there? Explain in detail the differences
+   between binary segmentation and dynamic programming algorithms for
+   computing model parameters.
+
+2. Explain in detail the similarities and differences between Gaussian
+   Mixture Models and Hidden Markov Models. What kinds of data are
+   used as inputs? What parameters are there to infer? How many of
+   each parameter? What hyper-parameters must be fixed before running
+   the inference algorithms? How do the inference algorithms work?
+
+3. Explain in detail the similarities and differences between the
+   model selection procedures for segmentation/changepoint algorithms
+   that we have seen in class (AIC/BIC/cross-validation/kink in the
+   curve). Explain how each procedure could be used for model
+   selection.
+
+4. Describe the general dimensionality reduction problem. What are the
+   inputs to a dimensionality reduction algorithm, and what are the
+   outputs? What criteria can be used to evaluate the quality of a
+   dimensionality reduction algorithm?
+
+5. Explain in detail the similarities and differences between
+   Principal Components Analysis and Autoencoders. What algorithms are
+   used? How many parameters are there to infer? How to visualize the
+   low-dimensional embedding of the data?
+
+Rubric: 20 points for each question. Minus points for incomplete
+and/or off-topic responses.
+
+EXTRA CREDIT: 10 points for ALL students if ALL students have
+completed the course eval by the end of the day Friday Nov 20.
+
+For the real final exam on Friday Nov 20 at 7:30AM-9:30AM, what would be
+the analogous questions for the other topics that we have studied?
+
+Other questions that may appear on the final:
+
+- Assuming there are some gold standard labels available, explain how
+  the labels can be used to quantitatively evaluate a changepoint
+  detection algorithm. What value(s) do you compute, and how do you
+  interpret them?
+- Describe the general segmentation / changepoint detection
+  problem. What are the inputs to a changepoint algorithm, and what
+  are the outputs?
+
