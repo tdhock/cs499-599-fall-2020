@@ -6,7 +6,7 @@ Practice final exam
    between binary segmentation and dynamic programming algorithms for
    computing model parameters.
 
-2. Explain in detail the similarities and differences between Gaussian
+2. Explain in detail the similaraities and differences between Gaussian
    Mixture Models and Hidden Markov Models. What kinds of data are
    used as inputs? What parameters are there to infer? How many of
    each parameter? What hyper-parameters must be fixed before running

@@ -141,13 +141,19 @@ segs.dt <- data.table(data=sim.dt, pred=pred.dt, data.type="PCA")
     data=segs.dt))
 
 n.input.output <- ncol(sim.dt)
-n.code.units <- 2
+n.code.units <- 1
+n.hidden.units <- 2
+activation <- "relu"
 model <- keras::keras_model_sequential() %>%
   keras::layer_dense(
     input_shape = n.input.output,#first/input layer
     # unit = activation( weight * input_unit )
-    units = n.code.units, name="code", activation="sigmoid") %>%#second layer
-  keras::layer_dense(units = n.input.output)#third/output layer
+    units = n.hidden.units, activation=activation) %>%
+  keras::layer_dense(
+    units=n.code.units, name="code", activation=activation) %>% 
+  keras::layer_dense(
+    units=n.hidden.units, activation=activation) %>%
+  keras::layer_dense(units = n.input.output)
 compiled.model <- keras::compile(
   model,
   optimizer=keras::optimizer_sgd(),

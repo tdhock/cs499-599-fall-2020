@@ -61,11 +61,9 @@ model <- keras::keras_model_sequential() %>%
 compiled <- keras::compile(
   model,
   loss=keras::loss_mean_squared_error,
-  optimizer=keras::optimizer_adam())
+  optimizer=keras::optimizer_adagrad(lr=0.06))
 fit.data <- keras::fit(
-  compiled, x=X.sc.mat, y=X.sc.mat, epochs=100,
-  callbacks = callback_reduce_lr_on_plateau(monitor = "loss", factor = 0.1))
-                       
+  compiled, x=X.sc.mat, y=X.sc.mat, epochs=100)
 pred.keras.mat <- predict(compiled, X.sc.mat)
 rbind(autoencoder=sum((pred.keras.mat-X.sc.mat)^2),
       pca=total.squared.error)
