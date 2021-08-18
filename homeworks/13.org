@@ -25,7 +25,10 @@ compare to the PCA linear mapping.
 3. Now use keras::keras_model, keras::get_layer, and predict functions
    to compute the low-dimensional embedding of the original train
    data. Make a ggplot with these auto-encoder embeddings in one
-   panel, and the PCA in another panel. Use geom_text(label=digit) or
+   panel, and the PCA in another panel, using
+   facet_wrap(scales="free") so that the plots are NOT constrained to
+   have the same scales on the x/y axes (the units of the PCA and
+   auto-encoder embeddings are not comparable). Use geom_text(label=digit) or
    geom_point(color=digit) to visualize the different digit
    classes. Which of the two methods results in better separation
    between digit classes?
